@@ -2,41 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Lassana Konate Homepage</title>
+    <title id="title">Lassana Konate Homepage</title>
     <link rel="stylesheet" href="homepage.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amatica SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Hairline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Codystar'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nosifer'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway Dots'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline'rel='stylesheet'>
+    <script src="jquery-3.1.1.min.js"></script>
+
   </head>
   <body>
 
 
+<div id="mySetting" >
+  <div style="font-size:23px;"><span id="elementTitle"> </span> Setting</div> <br>
+  <div class="optionSetting" id="BGC" style=""> Background-Color
 
-    <div class="header"> LASSANA</div>
+<div id="settingColor">
+  <ul class="settingUls">
+
+  </ul>
+</div>
+  </div>
+  <div class="optionSetting" id="FC" > Font-Color
+
+<div id="settingFontColor">
+  <ul class="settingFontUls">
+
+  </ul>
+</div>
+  </div>
+    <div class="optionSetting" id="FF" >   Font-Family
+      <div id="settingFontFam">
+
+      </div>
+    </div>
+    <div class="optionSetting" id="FS" >   Font-Size
+      <div id="settingFontSize">
+       <button id="plus">+</button>
+       <div id="currentFontSize">2em</div>
+       <button id="minus">-</button>
+      </div>
+    </div>
+    <div class="optionSetting" id="LS" >  Letter Spacing
+      <div id="settingLetterSpacing">
+       <button id="plusLS">+</button>
+       <div id="currentLS">2em</div>
+       <button id="minusLS">-</button>
+      </div>
+    </div>
+
+</div>
+
+    <div  id="myHeader" > LASSANA  </div>
+
     <div class="menu"><ul id="menuUl">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#" id="home" onclick="showPage(1)">Home</a></li>
+      <li><a href="#" id="resume" onclick="showPage(2)">Resume</a></li>
+      <li><a href="#" id="porfolio" onclick="showPage(3)">Portfolio</a></li>
+      <li><a href="#" id="stting" onclick="showPage(4)">Page Setting</a></li>
+
     </ul></div>
-    <div class="content"><h1> <center>Welcome!</center></h1>
-    <p> My name is Lassana Konate, I am an undergraduate Information Technology student at Point Park University in Pittsburgh, Pennsylvania. I like innovating things and I am interested in sport, science, technology, robotic and artificial intelligence. The courses I am currently taking include Advance Programming, Server management, Business law2, principle of management and Introduction to art of poetry.</p>
+    <div class="content"><h1> <center id="welcome">Welcome!</center></h1>
+    <p id="contentText"> My name is Lassana Konate, I am an undergraduate Information Technology student at Point Park University in Pittsburgh, Pennsylvania. I like innovating things and I am interested in sport, science, technology, robotic and artificial intelligence. The courses I am currently taking include Advance Programming, Server management, Business law2, principle of management and Introduction to art of poetry.</p>
 <div class="sideLeft1">
-  <h1><center>Current Courses</center></h1>
-  <li>Advance Programming</li>
-  <li>Business law2</li>
-  <li>Server Management</li>
-  <li>Strategic Planing</li>
-  <li>Principle of management</li>
-  <li>introduction to poetry</li>
-  <table>
-    <tr><td><h1><center>Coding Skills</center></h1></td></tr>
-    <tr><td>JAVASCRIPT JAVA</td></tr>
-    <tr><td>HTML5 CSS</td></tr>
-    <tr><td>PHP</td></tr>
-    <tr><td>SQL</td></tr>
+  <h1><center id="currentCourses">Current Courses</center></h1>
+
+    <li>Advance Programming</li>
+    <li>Business law2</li>
+    <li>Server Management</li>
+    <li>Strategic Planing</li>
+    <li>Principle of management</li>
+    <li>introduction to poetry</li>
+
+
+  <table id="mytable">
+    <tr><td><h1><center id="codingSkills">Coding Skills</center></h1></td></tr>
+    <tr><td id="row1">JAVASCRIPT JAVA</td></tr>
+    <tr><td id="row2">HTML5 CSS</td></tr>
+    <tr><td id="row3">PHP</td></tr>
+    <tr><td id="row4">SQL</td></tr>
 
   </table>
 </div>
 <div class="sideLeft2">
-  <h1><center>Contact</center></h1>
+  <h1><center id="contacts">Contact</center></h1>
   <li><b>Phone: </b> 724-699-4863</li>
   <li><b>Email: </b> lkonat@pointpark.edu</li>
 </div>
@@ -46,8 +104,268 @@
 </div>
 
 </div>
-    <div class="footer"><center>Phone: 7246994863 Email: konate011@gmail.com</center></div>
+
+<div class="resume">
+<center><h1>Resume</h1></center>
+<p id="resumeText"> This is my resume</p>
 
 
+
+
+
+</div>
+<div class="portfolio">
+  <center><h1>Portfolio</h1></center>
+</div>
+<div class="setting">
+  <center><h1>Page Setting</h1></center>
+  Hint: double click anywhere on the website and edit them
+  <div id="fontFam">
+    <div  id="font" > <h1>Font-family</h1> <br>
+    <input type="radio" name="size" value="georgia" checked> georgia<br>
+    <input type="radio" name="size" value="times new roman"> times new roman<br>
+    <input type="radio" name="size" value="Courier New"> Courier New<br>
+    <input type="radio" name="size" value="Lucida Console"> Lucida Console<br>
+    <input type="radio" name="size" value="Comic Sans MS"> Comic Sans MS<br>
+    <input type="radio" name="size" value="Arial"> Arial<br>
+    <input type="radio" name="size" value="Sofia"> Sofia<br>
+    <input type="radio" name="size" value="Amatica SC"> Amatica SC<br>
+    <input type="radio" name="size" value="Almendra Display"> Almendra Display<br>
+    <input type="radio" name="size" value="Bungee Hairline"> Bungee Hairline<br>
+    <input type="radio" name="size" value="Bungee Shade"> Bungee Shade<br>
+    <input type="radio" name="size" value="Cinzel Decorative"> Cinzel Decorative<br>
+    <input type="radio" name="size" value="Codystar"> Codystar<br>
+    <input type="radio" name="size" value="Dawning of a New Day"> Dawning of a New Day<br>
+    <input type="radio" name="size" value="Codystar"> Codystar<br>
+    <input type="radio" name="size" value="Nosifer"> Nosifer<br>
+    <input type="radio" name="size" value="Raleway Dots"> Raleway Dots<br>
+      <input type="radio" name="size" value="Bungee Outline"> Bungee Outline<br>
+   </div>
+  </div>
+
+  <div  id="colors" >
+    <h1>Color </h1> <input type="radio" name="color" value="background" checked> background
+    <input type="radio" name="color" value="font"> font
+  <div id="colorDivs">
+    <ul class="uls">
+
+    </ul>
+  </div>
+ </div>
+
+</div>
+
+    <div class="footer" id="footer"><center>Phone: 7246994863 Email: konate011@gmail.com</center></div>
+
+    <script type="text/javascript">
+    var colorTarget= "Background";
+    var targetId;
+    var allowedToQuit=false;
+$(document).ready(function(){
+
+
+
+        $("body").dblclick(function(e){
+          allowedToQuit=false;
+          if(e.target.id.length >0){
+            if(e.target.id==="plus" ||e.target.id==="minus" ||e.target.id==="currentFontSize" || e.target.id==="plusLS" ||e.target.id==="minusLS" ||e.target.id==="currentLS" ){
+              return;
+            }
+            targetId = "#"+e.target.id;
+            $("#elementTitle").text("This "+ e.target.id);
+          }else if (e.target.className.length >0) {
+            targetId = "."+e.target.className;
+            $("#elementTitle").text("This "+ e.target.className);
+          }else if (e.target.localName ==="body") {
+            targetId = "body";
+            $("#elementTitle").text("body");
+          }else {
+            targetId=e.target;
+            $("#elementTitle").text("this "+e.target.localName);
+            //$(e.target).css("background-color","black");
+            //return;
+          }
+            $("#mySetting").show();
+          var limit = $("body")[0].clientWidth;
+          var limitY = $("body")[0].clientHeight;
+          var xp=e.clientX;
+          var yp=e.clientY;
+          if(xp+$("#mySetting").width() >limit){
+            //$("#mySetting").css("top",e.target.offsetTop);//
+            $("#mySetting").css("left",e.clientX-300);
+          }else {
+          //  $("#mySetting").css("top",e.target.offsetTop);//
+            $("#mySetting").css("left",e.clientX);
+          }
+          if(yp+$("#mySetting").height() > limitY){
+            $("#mySetting").css("top",e.clientY-300);//e.target.offsetTop-300
+
+          }else {
+            $("#mySetting").css("top",e.clientY);//
+
+          }
+           $("#currentFontSize").text($(targetId).css("font-size"));
+           $("#currentLS").text($(targetId).css("letter-spacing"));
+        });
+
+        $("body").click(function(e){
+          var pa =$(e.target).parents();
+          for(var i =pa.length-1; i>= 0; i--){
+            if(pa[i].id ==="mySetting"){
+              return;
+            }
+
+          }
+
+          $("#mySetting").hide();
+
+         });
+        $(".settingUls").click(function(e){
+
+          if(targetId !=="null"){
+
+            $(targetId).css("background-color",e.target.innerHTML);
+
+          }else {
+            alert("unknow ");
+          }
+
+
+        });
+        $(".settingFontUls").click(function(e){
+
+          if(targetId !=="null"){
+
+            $(targetId).css("color",e.target.innerHTML);
+
+          }else {
+            alert("unknow ");
+          }
+
+
+        });
+        $("#settingFontFam").click(function(e){
+
+          if(targetId !=="null"){
+            $(targetId).css("font-family",e.target.innerHTML);
+
+          }else {
+            alert("unknow ");
+          }
+
+        });
+        $("#plus").click(function(e){
+          var currentFontSize=$(targetId).css("font-size");
+             currentFontSize=parseFloat(currentFontSize.slice(0,currentFontSize.length-2));
+             currentFontSize+=.05;
+             $(targetId).css("font-size",currentFontSize);
+             $("#currentFontSize").text($(targetId).css("font-size"));
+
+
+        });
+        $("#minus").click(function(e){
+          var currentFontSize=$(targetId).css("font-size");
+             currentFontSize=parseFloat(currentFontSize.slice(0,currentFontSize.length-2));
+             currentFontSize-=.05;
+             $(targetId).css("font-size",currentFontSize);
+             $("#currentFontSize").text($(targetId).css("font-size"));
+             console.log(currentFontSize);
+          console.log($(targetId).css("font-size"));
+
+        });
+        $("#plusLS").click(function(){
+          var currentLS=$(targetId).css("letter-spacing");
+          currentLS=parseFloat(currentLS);
+             currentLS+=.05;
+             $(targetId).css("letter-spacing",currentLS);
+             $("#currentLS").text($(targetId).css("letter-spacing"));
+             console.log(currentLS);
+          console.log($(targetId).css("letter-spacing"));
+
+        });
+        $("#minusLS").click(function(){
+          var currentLS=$(targetId).css("letter-spacing");
+          currentLS=parseFloat(currentLS);
+             currentLS-=.05;
+             $(targetId).css("letter-spacing",currentLS);
+             $("#currentLS").text($(targetId).css("letter-spacing"));
+             console.log(currentLS);
+          console.log($(targetId).css("letter-spacing"));
+
+        });
+
+
+        $(".resume").hide();
+        $(".portfolio").hide();
+        $(".setting").hide();
+
+    $(".uls").click(function(e){
+       //console.log(e.target.innerHTML);
+       if(colorTarget==="font"){
+       $("body").css("color",e.target.innerHTML);
+       }
+       else {
+       $("body").css("background-color",e.target.innerHTML);
+       }
+
+    });
+
+
+    $('input:radio[name=color]').change(function(){
+      colorTarget = $('input:radio[name=color]:checked').val();
+     });
+
+
+    $('input:radio[name=size]').change(function(){
+              $("body").css("font-family", $('input:radio[name=size]:checked').val());
+    });
+});
+
+      function showPage(x){
+        $(".content").hide();
+        $(".resume").hide();
+        $(".portfolio").hide();
+        $(".setting").hide();
+
+        if(x===1){
+          $(".content").show();
+        }
+        else if (x===2) {
+          $(".resume").show();
+        }else if (x===3) {
+           $(".portfolio").show();
+        }
+        else if (x===4) {
+           $(".setting").show();
+        }
+
+      }
+
+
+       function addColorsPanel(x){
+         var colors = ["aqua",  "azure",  "beige" , "bisque" , "black" , "blue" , "brown" , "chocolate" , "coral" , "crimson" , "cyan" , "fuchsia" , "ghostwhite" ,"gold" , "goldenrod" , "gray" , "green" , "indigo" ,"ivory" , "khaki" , "lavender" , "lime" , "linen" , "magenta" ,"maroon" , "moccasin" , "navy" ,"olive" , "orange" , "orchid" , "peru" , "pink" , "plum" , "purple" , "red" , "salmon" ,"sienna" , "silver" , "snow" , "tan",  "teal" , "thistle",  "tomato" , "turquoise"  ,"violet",  "white" , "yellow" ];
+         for(var i=0; i< colors.length; i++){
+              $(x).append("<li>"+colors[i] +"</li>");
+              $($(x)[0].lastChild).css("color",colors[i]);
+              if(colors[i]==="black"){
+                $($(x)[0].lastChild).css("background-color",'lightgrey');
+              }
+         }
+       }
+       function addSettingFonts(x){
+         var fontFams=["georgia","times new roman","Courier New","Lucida Console","Comic Sans MS","Arial","Sofia","Amatica SC","Amatica SC","Almendra Display","Bungee Hairline","Bungee Shade","Cinzel Decorative","Codystar","Dawning of a New Day","Nosifer","Raleway Dots","Bungee Outline"];
+         for(var i=0; i< fontFams.length; i++){
+              $(x).append("<div>"+fontFams[i] +"</div>");
+              $($(x)[0].lastChild).css("font-family",fontFams[i]);
+         }
+       }
+
+addColorsPanel(".uls");
+addColorsPanel(".settingUls");
+addColorsPanel(".settingFontUls");
+addSettingFonts("#settingFontFam");
+
+
+    </script>
   </body>
 </html>

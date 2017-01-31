@@ -1,3 +1,175 @@
+#mySetting{
+  position: absolute;;
+  top: 0px;
+  left:0px;
+  width: 300px;
+  height: 200px;
+  font-size: 18px;
+  text-align: center;
+  background-color: black;
+  color :white;
+  border: 2px solid lightgrey;
+  cursor: pointer;
+  font-family: georgia;
+ display: none;
+  box-shadow: 10px 10px 5px #888888;
+}
+#myHeader{
+  width: auto;
+  height: 30px;
+
+}
+#BGC{
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+
+}
+#FC{
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+}
+#FF{
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+}
+#FS{
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+}
+#LS{
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+}
+#mySetting div{
+
+  margin-top: 0px;
+  font-size: 25px;
+
+}
+#mySetting .optionSetting:hover{
+
+  background-color: lightgrey;
+  color: black;
+
+}
+#settingColor{
+  position:absolute;
+  top: 0px;
+  left:300px;
+  width: 200px;
+  height: 0px;
+  overflow-y: scroll;
+ background-color: black;
+  color :white;
+  text-align: center;
+box-shadow: 10px 10px 5px #888888;
+
+}
+#settingFontColor{
+  position:absolute;
+  top: 0px;
+  left:300px;
+  width: 200px;
+  height: 0px;
+  overflow-y: scroll;
+ background-color: black;
+  color :white;
+  text-align: center;
+box-shadow: 10px 10px 5px #888888;
+}
+#settingFontFam{
+  position:absolute;
+  top: 0px;
+  left:300px;
+  width: 200px;
+  height: 0px;
+  overflow-y: scroll;
+ background-color: black;
+  color :white;
+  text-align: center;
+box-shadow: 10px 10px 5px #888888;
+}
+#settingFontSize{
+  position:absolute;
+  top: 0px;
+  left:300px;
+  width: 100px;
+  height: 0px;
+  overflow-y: scroll;
+ background-color: black;
+  color :white;
+  text-align: center;
+box-shadow: 10px 10px 5px #888888;
+}
+#settingLetterSpacing{
+  position:absolute;
+  top: 0px;
+  left:300px;
+  width: 100px;
+  height: 0px;
+  overflow-y: scroll;
+ background-color: black;
+  color :white;
+  text-align: center;
+box-shadow: 10px 10px 5px #888888;
+}
+#settingFontFam div:hover{
+
+ background-color: lightgrey;
+ color: black;
+
+}
+#settingColor ul{
+    list-style: none;
+    width: 100px;
+    height: auto;
+
+
+
+}
+#settingFontColor ul{
+    list-style: none;
+    width: 100px;
+    height: auto;
+
+
+
+}
+
+#settingFontColor li:hover{
+
+  background-color: lightgrey;
+  color: black;
+}
+#settingColor li:hover{
+
+
+  background-color: lightgrey;
+  color: black;
+
+
+
+}
+#BGC:hover #settingColor{
+  height: 200px;
+  border: 2px solid grey;
+}
+#FC:hover #settingFontColor{
+  height: 200px;
+  border: 2px solid grey;
+}
+#FF:hover #settingFontFam{
+  height: 200px;
+  border: 2px solid grey;
+}
+#FS:hover #settingFontSize{
+  height: auto;
+  border: 2px solid grey;
+}
+#LS:hover #settingLetterSpacing{
+  height: auto;
+  border: 2px solid grey;
+}
 .header{
 width: auto;
 height: 30px;
@@ -6,7 +178,7 @@ height: 30px;
 .menu{
 
 width: auto;
-height: 2em;
+height: 70px;
 
 }
 #menuUl{
@@ -16,14 +188,14 @@ height: 2em;
 
 }
 #menuUl li{
-  color: black;
+  /*color: black;*/
   float: left;
   margin-right: 2em;
   font-size: 2em;
 
 }
 #menuUl li:hover{
-  background-color: grey;
+  color: grey;
 
 }
 #menuUl a{
@@ -32,7 +204,8 @@ height: 2em;
 
 }
 .content{
-
+width: auto;
+height: auto;
 }
 .content li{
   list-style: none;
@@ -53,6 +226,7 @@ height: 2em;
 
 }
 .footer{
+  margin-top: 30px;
   clear: both;
 
 background-color: coral;
@@ -66,4 +240,69 @@ height:70px;
 }
 .sideLeft1 td:hover{
   background-color: lightblue;
+}
+.portfolio{
+  clear: both;
+  height: 500px;
+}
+.resume{
+  clear: both;
+  height:500px;
+}
+#colors li{
+  color: black;
+  width: inherit;
+  cursor: pointer;
+
+
+}
+#colors li:hover{
+
+
+  background-color: lightblue;
+
+
+
+}
+#colorDivs {
+  clear: both;
+  width: inherit;
+   height: 0px;
+   position: absolute;
+   top: 100px;
+   left:-20px;
+   overflow: scroll;;
+   transition: 1s;
+
+}
+#colors:hover #colorDivs{
+  height: 300px;
+
+}
+#colors ul{
+    list-style: none;
+    width: auto;
+    height: auto;
+
+}
+
+#colors{
+width: 200px;
+height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+cursor:  n-resize;
+
+font-family: georgia;
+color: black;
+float: left;
+}
+#fontFam{
+  width: 300px;
+  height: auto;
+margin: 0 auto;
+font-family: georgia;
+color: black;
+float: left;
 }
